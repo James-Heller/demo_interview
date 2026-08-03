@@ -5,6 +5,11 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+/**
+ * 这个Class不能修改
+ * @param a
+ * @param b
+ */
 record SomeData(
         Integer a,
         String b
@@ -16,5 +21,5 @@ public class Foo {
 
     private Integer id;
     private LocalDateTime createdAt;
-    private SomeData someData;
+    private SomeData someData; //此行不能修改
 }
