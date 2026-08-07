@@ -5,16 +5,6 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-/**
- * 这个Class不能修改
- * @param a
- * @param b
- */
-record SomeData(
-        Integer a,
-        String b
-){}
-
 @Data
 @TableName("foo")
 public class Foo {
